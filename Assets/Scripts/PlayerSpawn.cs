@@ -21,9 +21,9 @@ public class PlayerSpawn : MonoBehaviour
         {
             transform.position = new Vector3(0, 0, 0);
         }
-        if (pos.y > yRange)
+        /*if (pos.y > yRange)
         {
             transform.position = new Vector3(pos.x, 0, pos.z);
-        }
+        }*/
     }
 }
