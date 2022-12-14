@@ -10,12 +10,16 @@ public class PlayerController : MonoBehaviour
     private float horizontalInput;
     private float verticalInput;
 
+    private float x;
+
     void Update()
     {
-        //Movimiento horizontal
         horizontalInput = Input.GetAxis("Horizontal");
         transform.Rotate(Vector3.up * turnspeed * Time.deltaTime * horizontalInput);
         verticalInput = Input.GetAxis("Vertical");
         transform.Translate(Vector3.forward * speed * Time.deltaTime * verticalInput);
+        //x += Time.deltaTime * 20;
+        //transform.rotation = Quaternion.Euler(x, 0, 0);
+
     }
 }
